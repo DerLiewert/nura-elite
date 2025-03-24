@@ -1,0 +1,92 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.go-top-btn {
+  &._hide {
+    display: none;
+  }
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  z-index: 500;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #842231;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    transform: rotate(-90deg);
+    height: 40%;
+    path {
+      fill: #842231;
+    }
+  }
+  @media (any-hover: hover) {
+    transition: background-color 0.3s ease 0s;
+    svg path {
+      transition: fill 0.3s ease 0s;
+    }
+    &:hover {
+      background-color: #842231;
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
+
+  @media (min-width: $mobileSmall) {
+    width: 36px;
+    height: 36px;
+  }
+  @media (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: math.div(58, 48);
+
+  @media (min-width: $mobileSmall) {
+    font-size: 36px;
+  }
+  @media (min-width: $mobile) {
+    font-size: 42px;
+  }
+  @media (min-width: $tablet) {
+    font-size: 48px;
+  }
+}
+
+.title-with-text {
+  position: relative;
+  &_uppercase {
+    text-transform: uppercase;
+  }
+  &::before {
+    content: var(--text);
+    font-size: 140px;
+    font-weight: 700;
+    opacity: 0.05;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate3d(0, -38%, 0);
+
+    @media (min-width: $mobileSmall) {
+      font-size: 160px;
+    }
+    @media (min-width: $mobile) {
+      font-size: 200px;
+    }
+    @media (min-width: $tablet) {
+      font-size: 287px;
+    }
+  }
+}

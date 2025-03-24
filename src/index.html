@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"NURA Elite" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="intro">
+          <div class="intro__bg">
+            <img
+              loading="lazy"
+              src="@img/intro-bg.jpeg"
+              alt="Фото: Элитный коттеджный городок в г. Нур-Султан"
+            />
+          </div>
+          <div class="container">
+            <div class="intro__inner">
+              <div class="intro__left">
+                <h1 class="intro__title">
+                  Элитный коттеджный городок в г. <span>Нур-Султан</span>
+                </h1>
+                <a href="@img/ъеъ.jpg" download class="intro__btn">Скачать презентацию</a>
+                <div class="intro__cottages">
+                  <p class="intro__cottages-total">36 коттеджей</p>
+                  <div class="intro__cottages-details">
+                    <div class="intro__cottages-item">
+                      <p class="intro__cottages-value">3</p>
+                      <div class="intro__cottages-text">
+                        <p>коттеджа</p>
+                        <p>368 м2</p>
+                        <p>на 10 сотках</p>
+                      </div>
+                    </div>
+                    <div class="intro__cottages-item">
+                      <p class="intro__cottages-value">33</p>
+                      <div class="intro__cottages-text">
+                        <p>коттеджа</p>
+                        <p>179 м2</p>
+                        <p>на 4 сотках</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intro__right">
+                <p class="intro__text">
+                  <span>Строительные работы</span> начались в сентября 2021 года.
+                </p>
+                <p class="intro__text"><span>Срок сдачи</span> коттеджей - I квартал 2022 года</p>
+                <p class="intro__text">
+                  <span>Срок сдачи</span> всего коттеджного городка - II квартал 2022 года
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__left">
+                <h2 class="about__title title title-with-text" style="--text: 'О проекте'">
+                  О проекте
+                </h2>
+                <div class="about__item about__item_cottages">
+                  <p class="about__text">
+                    Элитный закрытый коттеджный городок в г. Нур-Султан состоящий из:
+                  </p>
+                  <div class="about__cottages">
+                    <p class="about__sub-title">36 коттеджей:</p>
+                    <ul>
+                      <li>368 м2 на 10 сотках</li>
+                      <li>179 м2 на 5 сотках</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="about__item">
+                  <h3 class="about__sub-title">О компании</h3>
+                  <div class="about__text">
+                    <p>
+                      “MM Group” Группа Строительных Компании – современная и динамично
+                      развивающаяся группа компаний, оказывающая широкий спектр услуг в строительном
+                      бизнесе от проектирования до сдачи объектов под ключ. Свою деятельность в
+                      строительном бизнесе начала осуществлять с 2013 года и прочно зарекомендовала
+                      себя надежной Казахстанской строительной компанией не только на территории
+                      Республики Казахстан, но и за рубежом. Учредителем и генеральным директором
+                      группы строительных компаний «MM Group» является - Мольдир Суюншали.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__item">
+                  <h3 class="about__sub-title">Миссия</h3>
+                  <div class="about__text">
+                    <p>
+                      Приоритетом группы строительных компаний «MM Group» является профессиональный
+                      подход с применением инновационных решении в строительстве воздвигаемых
+                      объектов, опытный коллектив, качественные материалы и своевременность сдачи
+                      объектов с доступной возможностью приобретения не только жилья, но и других
+                      объектов недвижимости.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__right">
+                <div class="about__image">
+                  <img loading="lazy" src="@img/about.jpeg" alt="MM Group" />
+                </div>
+                <div class="about__item">
+                  <h3 class="about__sub-title">Цель</h3>
+                  <div class="about__text">
+                    <p>
+                      Укрепление статуса компании, которая способна обеспечить потребителя доступной
+                      и качественной недвижимостью в срок. Развитие, надежность и качество!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cottages">
+          <div class="container">
+            <h2 class="cottages__title title">Коттеджи</h2>
+            <div class="cottages__slider swiper">
+              <div class="cottages__slider-wrapper swiper-wrapper">
+                <div class="cottages__slide cottages-slide swiper-slide">
+                  <div class="cottages-slide__image">
+                    <img loading="lazy" src="@img/cottage-img.jpeg" alt="Коттедж" data-zoom />
+                  </div>
+                  <div class="cottages-slide__right">
+                    <p class="cottages-slide__square">179 м2</p>
+                    <div class="cottages-slide__plan">
+                      <img
+                        loading="lazy"
+                        src="@img/cottage-plan-01.jpg"
+                        alt="План коттеджа"
+                        data-zoom
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="cottages__slide cottages-slide swiper-slide">
+                  <div class="cottages-slide__image">
+                    <img loading="lazy" src="@img/intro-bg.jpeg" alt="Коттедж" data-zoom />
+                  </div>
+                  <div class="cottages-slide__right">
+                    <p class="cottages-slide__square">149 м2</p>
+                    <div class="cottages-slide__plan">
+                      <img
+                        loading="lazy"
+                        src="@img/cottage-plan-02.jpg"
+                        alt="План коттеджа"
+                        data-zoom
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cottages__slider-actions">
+                <button
+                  type="button"
+                  class="cottages__slider-btn swiper-button swiper-button_prev"
+                ></button>
+
+                <div class="cottages__slider-pagination pagination swiper-pagination"></div>
+                <button
+                  type="button"
+                  class="cottages__slider-btn swiper-button swiper-button_next"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="location">
+          <div class="container">
+            <div class="location__inner">
+              <div class="location__content">
+                <h2
+                  class="location__title title title-with-text title-with-text_uppercase"
+                  style="--text: 'Локация'"
+                >
+                  Локация
+                </h2>
+                <div class="location__text">
+                  <p>
+                    Закрытый коттеджный городок Nura Elite расположен в элитном и перспективном
+                    районе столицы, рядом с зелёным поясом по соседству с Vella Village.
+                  </p>
+                  <p>
+                    Nura Elite - это прекрасное пространство для уединения и активной семейной жизни
+                    в гармонии с природой, без городского шума с удобной транспортной развязкой.
+                  </p>
+                </div>
+              </div>
+              <div class="location__map-wrapper">
+                <div
+                  class="location__map"
+                  id="location-map"
+                  aria-label="Местоположение коттеджныого городка Nura Elite на карте"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container advantages__container">
+            <div class="advantages__inner">
+              <h2 class="advantages__title title">Основные преимущества городка</h2>
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item_icon-1">
+                  <p>
+                    Выгодное<br />
+                    месторасположение
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item_icon-2">
+                  <p>
+                    Охраняемая<br />
+                    территория
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item_icon-3">
+                  <p>
+                    Городок по периметру ограждён 3-метровым забором, оснащён системой
+                    видеонаблюдения 24/7
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item_icon-4">
+                  <p>Здесь вы почувствуете уединенность, безопасность и комфорт</p>
+                </li>
+              </ul>
+              <div class="advantages__image">
+                <img src="@img/advantages/image.jpeg" alt="NURE Elite" loading="lazy" />
+              </div>
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item_icon-5">
+                  <p>Индивидуальные участки ограждены 2-метровыми заборами</p>
+                </li>
+                <li class="advantages__item advantages__item_icon-6">
+                  <p>
+                    Cобственное<br />
+                    приложение
+                  </p>
+                </li>
+                <li class="advantages__item advantages__item_icon-7">
+                  <p>
+                    Каждому владельцу коттеджа даётся возможность на своем земельном участке
+                    возводить дополнительные застройки: баню, сауну, летнюю кухню и др.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="why">
+          <div class="container">
+            <h2
+              class="why__title title title-with-text title-with-text_uppercase"
+              style="--text: 'Почему NURA ELITE?'"
+            >
+              Почему NURA ELITE?
+            </h2>
+            <div class="why__body">
+              <div class="why__image">
+                <img
+                  src="@img/cottage-img.jpeg"
+                  alt="Картинка одного из коттеджей"
+                  loading="lazy"
+                />
+              </div>
+              <ul class="why__list">
+                <li class="why__item why__item_icon-1">
+                  <div class="why__item-content">
+                    <h3 class="why__item-title">Энергоэффектиность</h3>
+                    <p class="why__item-text">Дома сохраняют тепло зимой и прохладу летом</p>
+                  </div>
+                </li>
+                <li class="why__item why__item_icon-2">
+                  <div class="why__item-content">
+                    <h3 class="why__item-title">Экологически чистый район</h3>
+                    <p class="why__item-text">
+                      Городок расположен рядом с лесополосой и к. Нура-Есиль
+                    </p>
+                  </div>
+                </li>
+                <li class="why__item why__item_icon-3">
+                  <div class="why__item-content">
+                    <h3 class="why__item-title">Безопасность</h3>
+                    <p class="why__item-text">Закрытый городок с круглосуточным видеонаблюдением</p>
+                  </div>
+                </li>
+                <li class="why__item why__item_icon-4">
+                  <div class="why__item-content">
+                    <h3 class="why__item-title">Коммуникации</h3>
+                    <p class="why__item-text">
+                      Централизованное водоснабжение, энергоснабжение и канализация.
+                    </p>
+                    <p class="why__item-text">
+                      Отопительная система и горячая вода - это один общий газгольдер на весь
+                      городок, функционирующий за счет газа.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="technology">
+          <div class="container">
+            <h2 class="technology__title title title-with-text" style="--text: 'Технология'">
+              Технология строения
+            </h2>
+            <div class="technology__body">
+              <div class="technology__item technology-item">
+                <div class="technology-item__image">
+                  <img src="@img/technology/01.jpeg" alt="Конструкция стены" loading="lazy" />
+                </div>
+                <h3 class="technology-item__title">Конструкция стены</h3>
+                <p class="technology-item__text">
+                  Двойная кладка из жжённого красного кирпича - 38/40 см, утепление минеральной
+                  плитой - 10 см., и облицовка HPL и ФБЦ панелью
+                </p>
+              </div>
+              <div class="technology__item technology-item">
+                <div class="technology-item__image">
+                  <img src="@img/technology/02.jpeg" alt="Конструкция двери" loading="lazy" />
+                </div>
+                <h3 class="technology-item__title">Конструкция двери</h3>
+                <p class="technology-item__text">
+                  Технология IZO TERMO. Двери не соприкасаются с наружными. Между ними расположен
+                  изолятор - щит из португальского пробкового дуба толщиной в 8 мм. IZO TERMO
+                  устраняет “мостик холода” и не дает теплу уходить из дома. С этой технологией вам
+                  не нужен тамбур и вторая дверь.
+                </p>
+              </div>
+              <div class="technology__item technology-item">
+                <div class="technology-item__image">
+                  <img src="@img/technology/03.jpeg" alt="Конструкция Фасада" loading="lazy" />
+                </div>
+                <h3 class="technology-item__title">Конструкция Фасада</h3>
+                <p class="technology-item__text">
+                  HPL панель - это высококачественная строительная продукция для долговечной
+                  облицовки фасада. Стойкость на погодные воздействия +180 с/ -180с с высоким
+                  эффектом защиты от атмосферных воздействий. Данная защита обеспечивается за счет
+                  применения акрилополиуретановых смол с двойным отверждением. Относится к
+                  экологичным материалам.
+                </p>
+              </div>
+              <div class="technology__item technology-item">
+                <div class="technology-item__image">
+                  <img src="@img/technology/04.jpeg" alt="Конструкция окна" loading="lazy" />
+                </div>
+                <h3 class="technology-item__title">Конструкция окна</h3>
+                <p class="technology-item__text">
+                  Высокая экологичность, безопасность, надёжность и долговечность, усиленная
+                  теплоизолирующая способность, которая обеспечивается пятикамерным строением
+                  профиля с тройным остеклением и шумоизоляцией (система Helios рассчитана
+                  на стеклопакеты толщиной 44 мм с воздушной прослойкой в 16 мм, проходя через
+                  которые низкочастотные шумы теряют свою интенсивность, что очень ценят жители)
+                  по технологии FUNKE
+                </p>
+              </div>
+              <div class="technology__item technology-item">
+                <div class="technology-item__image">
+                  <img src="@img/technology/05.jpeg" alt="Конструкция кровли" loading="lazy" />
+                </div>
+                <h3 class="technology-item__title">Конструкция кровли</h3>
+                <p class="technology-item__text">
+                  Гибкая черепица ТЕХНОНИКОЛЬ SHINGLAS - это гарантия комфорта и безопасности вашего
+                  дома. Дома с кровлей из гибкой черепицы ТЕХНОНИКОЛЬ SHINGLAS очаровывают своей
+                  гармонией, изяществом. Коллекции отличаются разнообразием форм и расцветок.
+                </p>
+              </div>
+              <div class="technology__item technology-item">
+                <div class="technology-item__image">
+                  <img src="@img/technology/06.jpeg" alt="ФБЦ" loading="lazy" />
+                </div>
+                <h3 class="technology-item__title">ФБЦ</h3>
+                <p class="technology-item__text">
+                  ФБЦ - это уникальный и высококачественный строительный материал для долговечной
+                  облицовки фасада. Высокая морозостойкость, пожаробезопасность, хорошая звуко- и
+                  теплоизоляция, герметичность, повышенная прочность, погодоустойчивость. Безопасна
+                  как для человека, так и для окружающей среды. Они не содержат асбест, состоят из
+                  экологически чистых натуральных компонентов: 82-85% цемента, древесное волокно,
+                  добавки для снижения веса, кремнийорганические соединения
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <form action="#" class="form">
+          <div class="container">
+            <div class="form__body">
+              <h2 class="form__title">Скачать презентацию</h2>
+              <p class="form__sub-title">Оставьте свои контакты и мы вам вышлем</p>
+              <div class="form__fields">
+                <div class="form__field form__field_name">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Ваше имя"
+                    aria-label="Введите ваше имя"
+                  />
+                </div>
+                <div class="form__field form__field_tel">
+                  <input
+                    type="tel"
+                    class="form__input"
+                    placeholder="Номер телефона"
+                    aria-label="Введите номер телефона"
+                  />
+                </div>
+                <button type="submit" class="form__button">Отправить</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <section class="payment">
+          <div class="container">
+            <h3 class="payment__title title title-with-text" style="--text: 'Оплата'">
+              Способы оплаты
+            </h3>
+            <div class="payment__items">
+              <div class="payment__item">
+                <div class="payment__item-image">
+                  <img src="@img/payment/01.svg" alt="Icon" loading="lazy" aria-hidden="true" />
+                </div>
+                <h3 class="payment__item-title">Получение займа через АО “ЖилСтройСберБанк”</h3>
+              </div>
+              <div class="payment__item">
+                <div class="payment__item-image">
+                  <img src="@img/payment/02.svg" alt="Icon" loading="lazy" aria-hidden="true" />
+                </div>
+                <h3 class="payment__item-title">
+                  Получение беспроцентной рассрочки от застройщика NURA ELITE
+                </h3>
+              </div>
+              <div class="payment__item">
+                <div class="payment__item-image">
+                  <img src="@img/payment/03.svg" alt="Icon" loading="lazy" aria-hidden="true" />
+                </div>
+                <h3 class="payment__item-title">Казахстанская Ипотечная Компания «Орда»</h3>
+              </div>
+              <div class="payment__item">
+                <div class="payment__item-image">
+                  <img src="@img/payment/04.svg" alt="Icon" aria-hidden="true" />
+                </div>
+                <h3 class="payment__item-title">Оплата криптовалютой (Биткоин)</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__inner">
+              <div
+                class="contacts__map"
+                id="contacts-map"
+                aria-label="Местоположение бизнес центра Изумрудный"
+              ></div>
+              <div class="contacts__content">
+                <h2 class="contacts__title title">Контакты</h2>
+                <p class="contacts__text">ул. Кунаева 10, БЦ “Изумрудный”, блок - А, этаж 1</p>
+                <div class="contacts__row">
+                  <ul class="contacts__list">
+                    <li class="contacts__item contacts__item_call">
+                      <a href="tel:+77000011888" class="contacts__link">+7 (700) 001-18-88</a>
+                    </li>
+                    <li class="contacts__item contacts__item_mail">
+                      <a href="mailto:info@nuramm.kz" class="contacts__link">info@nuramm.kz</a>
+                    </li>
+                    <li class="contacts__item contacts__item_inst">
+                      <a href="#" class="contacts__link">@nura.premier</a>
+                    </li>
+                  </ul>
+                  <div class="contacts__qr-code">
+                    <img src="@img/qr-code.jpeg" alt="qr-code" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <button class="go-top-btn _hide" data-goto="body" aria-label="Скролл страницы в самый верх">
+        <svg
+          width="22.000000"
+          height="22.000000"
+          viewBox="0 0 22 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <path
+            d="M12.96 3.07L20.43 10.54L0.45 10.54C0.2 10.54 0 10.74 0 11C0 11.25 0.2 11.45 0.45 11.45L20.43 11.45L12.96 18.92C12.79 19.1 12.79 19.39 12.97 19.57C13.15 19.74 13.43 19.74 13.61 19.57L21.86 11.32C22.04 11.14 22.04 10.85 21.86 10.67C21.86 10.67 21.86 10.67 21.86 10.67L13.61 2.42C13.43 2.24 13.14 2.25 12.96 2.43C12.79 2.61 12.79 2.89 12.96 3.07L12.96 3.07Z"
+            fill="#FFC107"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+          <path
+            d="M22 11C22 11.12 21.95 11.23 21.86 11.32L13.61 19.57C13.43 19.75 13.14 19.74 12.96 19.56C12.79 19.38 12.79 19.1 12.96 18.92L20.89 11L12.96 3.07C12.79 2.89 12.79 2.6 12.97 2.42C13.15 2.25 13.43 2.25 13.61 2.42L21.86 10.67C21.95 10.76 22 10.87 22 11Z"
+            fill="#FFFFFF"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+          <path
+            d="M22 11C22 11.25 21.79 11.45 21.54 11.45L0.45 11.45C0.2 11.45 0 11.25 0 11C0 10.74 0.2 10.54 0.45 10.54L21.54 10.54C21.79 10.54 22 10.74 22 11Z"
+            fill="#FFFFFF"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+      </button>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>
